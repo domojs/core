@@ -1,16 +1,25 @@
 {
-  "name": "module1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "npenin",
   "dependencies": {
-    "redis": "^2.6.2",
-    "debug":"^2.2.0"
+    "@akala/json-rpc-ws": "^4.1.11",
+    "@akala/server": "^1.0.43",
+    "@akala/client": "^1.0.9",
+    "send": "^0.16.1"
   },
-  "typings":"dist/index.d.ts"
+  "devDependencies": {
+    "@types/request": "^2.0.5",
+    "@types/send": "^0.14.3",
+    "@types/ws": "^3.2.0"
+  },
+  "deprecated": false,
+  "description": "",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@akala-modules/core",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "tsc -p src"
+  },
+  "typings": "dist/index.d.ts",
+  "version": "1.0.25"
 }
