@@ -4,7 +4,8 @@
     "@akala/json-rpc-ws": "^4.1.11",
     "@akala/server": "^1.0.43",
     "@akala/client": "^1.0.9",
-    "send": "^0.16.1"
+    "send": "^0.16.1",
+    "snyk": "^1.59.1"
   },
   "devDependencies": {
     "@types/request": "^2.0.5",
@@ -18,8 +19,11 @@
   "name": "@akala-modules/core",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "tsc -p src"
+    "prepublishOnly": "tsc -p src",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "typings": "dist/index.d.ts",
-  "version": "1.0.25"
+  "version": "1.0.25",
+  "snyk": true
 }
