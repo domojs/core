@@ -10,8 +10,8 @@
   "devDependencies": {
     "@types/request": "^2.0.5",
     "@types/send": "^0.14.3",
-    "@types/ws": "^3.2.0",
-    "@types/uuid": "^3.4.3"
+    "@types/uuid": "^3.4.3",
+    "@types/ws": "^3.2.0"
   },
   "deprecated": false,
   "description": "",
