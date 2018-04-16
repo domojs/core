@@ -23,5 +23,5 @@
     "prepublishOnly": "tsc -p src"
   },
   "typings": "dist/index.d.ts",
-  "version": "1.0.26"
+  "version": "1.0.27"
 }
