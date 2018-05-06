@@ -1,9 +1,9 @@
 {
   "author": "npenin",
   "dependencies": {
-    "@akala/client": "^1.0.9",
+    "@akala/client": "^2.0.0-0",
     "@akala/json-rpc-ws": "^4.1.11",
-    "@akala/server": "^1.0.43",
+    "@akala/server": "^2.0.1-0",
     "send": "^0.16.1",
     "uuid": "^3.2.1"
   },

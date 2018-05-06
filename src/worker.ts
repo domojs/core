@@ -22,7 +22,7 @@ akala.registerFactory(AssetRegistration.name, function ()
     {
         var router = new akala.worker.Router();
 
-        var routerClient = akala.master.metaRouter.createClient(client)({ getContent: akala.worker.handle(router, '') });
+        var routerClient = akala.api.jsonrpcws(akala.master.metaRouter).createClient(client)({ getContent: akala.worker.handle(router, '') });
 
         return {
             register: function (url: string, path: string)

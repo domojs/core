@@ -13,7 +13,7 @@ akala.injectWithName(['$router', '$config'], function (app, config)
 
     var assets: { [path: string]: jsonrpc.Connection[] } = {};
 
-    var server = akala.createServerFromMeta(akala.master.metaRouter)(router, '/', {
+    var server = akala.api.jsonrpcws(akala.master.metaRouter).createServer('/assets', {
         register: function (param, socket)
         {
             if (!assets[param.path])
