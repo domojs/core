@@ -22,12 +22,11 @@ akala.registerFactory(AssetRegistration.name, function ()
     {
         var router = new akala.worker.Router();
 
-        var routerClient = akala.api.jsonrpcws(akala.master.metaRouter).createClient(client)({ getContent: akala.worker.handle(router, '') });
+        var routerClient = akala.api.jsonrpcws(akala.master.metaRouter).createClient(client, { getContent: akala.worker.handle(router, '') });
 
         return {
             register: function (url: string, path: string)
             {
-                var encodedPath = encodeURI(path);
                 router.get(url, akala.worker.expressWrap(function (req, res, next)
                 {
                     res.sendFile(path, { acceptRanges: false, dotfiles: 'allow', extensions: false }, next);
