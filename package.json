@@ -1,17 +1,19 @@
 {
   "author": "npenin",
   "dependencies": {
-    "@akala/client": "^2.0.0-0",
-    "@akala/json-rpc-ws": "^4.1.11",
-    "@akala/server": "^2.0.5",
-    "send": "^0.16.1",
-    "uuid": "^3.2.1"
+    "@akala/client": "^2.0.75",
+    "@akala/json-rpc-ws": "^7.0.1",
+    "@akala/server": "^2.1.15",
+    "send": "^0.16.2",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@types/request": "^2.0.5",
-    "@types/send": "^0.14.3",
-    "@types/uuid": "^3.4.3",
-    "@types/ws": "^3.2.0"
+    "@types/debug": "^4.1.2",
+    "@types/node": "^11.9.4",
+    "@types/request": "^2.48.1",
+    "@types/send": "^0.14.4",
+    "@types/uuid": "^3.4.4",
+    "@types/ws": "^6.0.1"
   },
   "deprecated": false,
   "description": "",

@@ -72,8 +72,9 @@ akala.injectWithNameAsync(['$router', '$config.@akala-modules/core'], function (
                             r.pipe(rw, { end: false });
                             r.on('end', function ()
                             {
+                                rw.write('\n');
                                 next();
-                            })
+                            });
                         }
                         else
                             next();

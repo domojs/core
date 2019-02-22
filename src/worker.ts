@@ -1,6 +1,4 @@
 import * as akala from '@akala/server';
-import * as fs from 'fs';
-import * as send from 'send'
 
 var log = akala.log('akala:module:core:worker');
 
@@ -32,7 +30,7 @@ akala.registerFactory(AssetRegistration.name, function ()
                     res.sendFile(path, { acceptRanges: false, dotfiles: 'allow', extensions: false }, next);
                 }));
 
-                routerClient.$proxy().register({ path: url });
+                routerClient.$proxy().register({ path: url, remap: null });
             }
         };
     });
