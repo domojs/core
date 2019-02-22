@@ -62,6 +62,7 @@ akala.injectWithNameAsync(['$router', '$config.@akala-modules/core'], function (
 
                     akala.eachAsync(validResponses, function (r, i, next)
                     {
+                        var linebreaks = 0;
                         akala.each(r.headers, function (value, name)
                         {
                             response.headers[name] = value;
@@ -69,10 +70,11 @@ akala.injectWithNameAsync(['$router', '$config.@akala-modules/core'], function (
 
                         if (r instanceof stream.Readable)
                         {
+                            rw.write('\n');
+                            linebreaks++;
                             r.pipe(rw, { end: false });
                             r.on('end', function ()
                             {
-                                rw.write('\n');
                                 next();
                             });
                         }
@@ -82,7 +84,7 @@ akala.injectWithNameAsync(['$router', '$config.@akala-modules/core'], function (
                         {
                             rw.end();
                         });
-                    response.headers['Content-Length'] = validResponses.reduce(function (value, response) { return value + response.headers['Content-Length']; }, 0);
+                    response.headers['Content-Length'] = validResponses.reduce(function (value, response) { return value + response.headers['Content-Length'] + 1; }, 0);
                     response.headers['Last-Modified'] = new Date(validResponses.reduce(function (value, response) { return Math.max(value, new Date(response.headers['Last-Modified']).valueOf()); }, 0)).toUTCString();
 
                     akala.master.handleResponse(res, null, 200)(response);
