@@ -3,8 +3,8 @@
 
 
 "@akala/client@^2.0.0-0":
-  version "2.0.75"
-  resolved "https://registry.yarnpkg.com/@akala/client/-/client-2.0.75.tgz#7d6bbc1a20f8c6b721662c9804a92e50b2b8410b"
+  version "2.0.76"
+  resolved "https://registry.yarnpkg.com/@akala/client/-/client-2.0.76.tgz#29bfa95702a2a388b1f103e76378c7a94789fd18"
   optionalDependencies:
     showdown "^1.8.6"
 
