@@ -2,9 +2,10 @@
 # yarn lockfile v1
 
 
-"@akala/client@^2.0.0-0":
+"@akala/client@^2.0.75":
   version "2.0.76"
   resolved "https://registry.yarnpkg.com/@akala/client/-/client-2.0.76.tgz#29bfa95702a2a388b1f103e76378c7a94789fd18"
+  integrity sha512-g0HcNRiLH7yYCPTu1JGB63/88S4zki5/TeOxrCXwORCmwXs1+yoGOgIDVLz1WqpGcLNd0PeC1lWF0gY3OTV02Q==
   optionalDependencies:
     showdown "^1.8.6"
 
@@ -35,9 +36,9 @@
     ws "^6.0.0"
 
 "@akala/server@^2.1.15":
-  version "2.1.15"
-  resolved "https://registry.yarnpkg.com/@akala/server/-/server-2.1.15.tgz#5047f6cc84731fd939e2710cece4dff9e868e808"
-  integrity sha512-QOIN0Pic50r7IgQFiX5KqBRG+8xll+7895h3vLozaFbwZbOjvrGiH13qiyBbQqpR1XQHe5MIRrmsQIK06PhjaQ==
+  version "2.1.28"
+  resolved "https://registry.yarnpkg.com/@akala/server/-/server-2.1.28.tgz#b9041f9dd259b4951d37309c2934365609e4766e"
+  integrity sha512-sj7CK9KoECQhZocFas9SG56Fm6pitNboEIapGRdXCYUhVH7hzUaJV9nOjzwpjLq9a0dLhiiXh+Hu7X2czKuh5g==
   dependencies:
     "@akala/core" "^2.0.69"
     "@akala/json-rpc-ws" "^7.0.0"
