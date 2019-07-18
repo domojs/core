@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@types/debug": "^4.1.2",
-    "@types/node": "^11.9.4",
+    "@types/node": "^12.6.8",
     "@types/request": "^2.48.1",
     "@types/send": "^0.14.4",
     "@types/uuid": "^3.4.4",
