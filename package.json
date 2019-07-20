@@ -15,6 +15,9 @@
     "@types/uuid": "^3.4.5",
     "@types/ws": "^6.0.1"
   },
+  "optionalDependencies": {
+    "@akala-modules/authentication": "^0.0.13"
+  },
   "deprecated": false,
   "description": "",
   "license": "MIT",
