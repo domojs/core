@@ -3,7 +3,7 @@ import * as jsonrpc from '@akala/json-rpc-ws'
 import * as stream from 'stream'
 import * as ws from 'ws'
 
-akala.injectWithNameAsync(['$router', '$config.@akala-modules/core'], function (app, config)
+akala.injectWithNameAsync(['$preAuthenticationRouter', '$config.@akala-modules/core'], function (app, config)
 {
     app.get('/assets', akala.static('modules/core/assets'));
     app.get('/', akala.static(config && config.root || 'modules/core/views'));
