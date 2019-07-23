@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@akala-modules/authentication@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@akala-modules/authentication/-/authentication-0.0.13.tgz#799800418173a9228a6068430c8ebf28822c5264"
-  integrity sha512-qJ5J3MWqEIk4OMQEsPKTTYloEbDP8PKOPyxQliCCyNnnT8x/YQflCqjWT0XviGz1eeYp1yZR/j2Ky3Leg0nHcw==
+"@akala-modules/authentication@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@akala-modules/authentication/-/authentication-0.0.18.tgz#4f05f7099ffd051b1c8f816266c02b091fa3c5a6"
+  integrity sha512-htRqO3X6LnXKbmBd34Jds3MrrCqHBaIS6orhocIHtLKOXbUHWDuOvmNwRcp2ExFgWQJJaygQUbvVXJOLlH2/dg==
   dependencies:
-    "@akala/server" "^2.1.19"
-    "@akala/storage" "^1.0.0"
+    "@akala/server" "^2.1.37"
+    "@akala/storage" "^1.0.8"
     connect-ensure-login "^0.1.1"
     oauth2orize "^1.11.0"
     passport "^0.4.0"
@@ -53,7 +53,7 @@
     uuid "^3.3.2"
     ws "^6.0.0"
 
-"@akala/server@^2.1.17", "@akala/server@^2.1.19", "@akala/server@^2.1.36":
+"@akala/server@^2.1.17", "@akala/server@^2.1.36", "@akala/server@^2.1.37":
   version "2.1.40"
   resolved "https://registry.yarnpkg.com/@akala/server/-/server-2.1.40.tgz#d77a6dc632e6872719d81877d4eed9a1d3b469b3"
   integrity sha512-HeKEi98J/fOZBN3DlBP4cRL1lW6O9yGWVGm+X+w8KDnw8HMBoBVMRTp1wagqou+kcHxH6J7YLQBuplA1d0Qvsg==
@@ -72,7 +72,7 @@
     ws "^7.1.1"
     xml2js "^0.4.19"
 
-"@akala/storage@^1.0.0":
+"@akala/storage@^1.0.8":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@akala/storage/-/storage-1.0.8.tgz#7c5ca7416bf43222db04e13e1f6cae7deaedc252"
   integrity sha512-piWRwPfSEkKTb7EmWGWD8Yao7I5D0X4gNA9beLlDVscOt6t7LJxU7oE5Fe3grb3T4B9ZsVPUm1Ga/IE5/AekPQ==

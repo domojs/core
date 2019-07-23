@@ -16,7 +16,7 @@
     "@types/ws": "^6.0.1"
   },
   "optionalDependencies": {
-    "@akala-modules/authentication": "^0.0.13"
+    "@akala-modules/authentication": "^0.0.18"
   },
   "deprecated": false,
   "description": "",
