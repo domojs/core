@@ -3,10 +3,10 @@ import * as jsonrpc from '@akala/json-rpc-ws'
 import * as stream from 'stream'
 import * as ws from 'ws'
 
-akala.injectWithNameAsync(['$preAuthenticationRouter', '$config.@akala-modules/core'], function (app, config)
+akala.module('@akala-modules/core').init(['$preAuthenticationRouter', '$config.@akala-modules/core'], function (app, config)
 {
-    app.get('/assets', akala.static('modules/core/assets'));
-    app.get('/', akala.static(config && config.root || 'modules/core/views'));
+    app.get('/assets', akala.master.serveStatic('modules/core/assets', { fallthrough: true }));
+    app.get('/', akala.master.serveStatic(config && config.root || 'modules/core/views', { fallthrough: true }));
 
     var router = new akala.HttpRouter();
     app.use('/assets', router.router)
@@ -62,7 +62,6 @@ akala.injectWithNameAsync(['$preAuthenticationRouter', '$config.@akala-modules/c
 
                     akala.eachAsync(validResponses, function (r, i, next)
                     {
-                        var linebreaks = 0;
                         akala.each(r.headers, function (value, name)
                         {
                             response.headers[name] = value;
@@ -71,7 +70,6 @@ akala.injectWithNameAsync(['$preAuthenticationRouter', '$config.@akala-modules/c
                         if (r instanceof stream.Readable)
                         {
                             rw.write('\n');
-                            linebreaks++;
                             r.pipe(rw, { end: false });
                             r.on('end', function ()
                             {
