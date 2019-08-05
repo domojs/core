@@ -3,7 +3,7 @@
   "dependencies": {
     "@akala/client": "^2.0.75",
     "@akala/json-rpc-ws": "^7.0.2",
-    "@akala/server": "^3.0.4",
+    "@akala/server": "^3.0.7",
     "send": "^0.17.1",
     "uuid": "^3.3.2"
   },
@@ -13,7 +13,7 @@
     "@types/request": "^2.48.2",
     "@types/send": "^0.14.4",
     "@types/uuid": "^3.4.5",
-    "@types/ws": "^6.0.1"
+    "@types/ws": "^6.0.2"
   },
   "optionalDependencies": {
     "@akala-modules/authentication": "^0.0.18"
