@@ -2,4 +2,4 @@
 import * as akala from '@akala/server';
 export * from './worker'
 
-require('master')
+import './master';
