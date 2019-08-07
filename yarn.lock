@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@akala-modules/authentication@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@akala-modules/authentication/-/authentication-0.1.4.tgz#730382832ca9350553c212ba1be709f7a2192380"
-  integrity sha512-YyTI6zZQP1PJrYjQfdSH/lrkzuRembIsjQ5qu+4fL8Prde+viFlCMleYXOd4QIBlO1OryVJjAk3rAoaNHC5b7g==
+"@akala-modules/authentication@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@akala-modules/authentication/-/authentication-0.1.5.tgz#19ca2cec694335b15994720368b914727b322b1a"
+  integrity sha512-qgXc0+f6oOjKD0nMmYz81sCxToR3PZ9neQdXH9VcAKpJhAccQD/ti2CutpL4Yvk+rT3q1706oTZ04FfYnvjXgQ==
   dependencies:
     "@akala/server" "^3.0.9"
     "@akala/storage" "^1.0.10"
