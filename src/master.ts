@@ -67,7 +67,7 @@ akala.module('@akala-modules/core').init(['$preAuthenticationRouter', '$config.@
 
                         if (r instanceof stream.Readable)
                         {
-                            // rw.write('\n');
+                            rw.write('\n');
                             r.pipe(rw, { end: false });
                             r.on('end', function ()
                             {
