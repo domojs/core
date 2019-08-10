@@ -53,10 +53,29 @@
     uuid "^3.3.2"
     ws "^6.0.0"
 
-"@akala/server@^3.0.12", "@akala/server@^3.0.17", "@akala/server@^3.0.9":
+"@akala/server@^3.0.12", "@akala/server@^3.0.9":
   version "3.0.17"
   resolved "https://registry.yarnpkg.com/@akala/server/-/server-3.0.17.tgz#67eeb2be5937d97a22aa18dc315bb4b87cb55145"
   integrity sha512-mxWnNGZsE+l6tVnCVmf3BTsEJFrWUV6Fb3YmHan4WFP0J1x8J0yFkorXYaWn5zCPs7uJJ1IX9IJ3iVT8Wqf0UQ==
+  dependencies:
+    "@akala/core" "^2.0.96"
+    "@akala/json-rpc-ws" "^7.0.2"
+    body-parser "^1.18.2"
+    express "^4.16.2"
+    on-finished "^2.3.0"
+    orchestrator "^0.3.8"
+    routington "^1.0.3"
+    send "^0.17.1"
+    sequencify "0.0.7"
+    source-map-support "^0.5.13"
+    underscore "^1.8.3"
+    ws "^7.1.1"
+    xml2js "^0.4.19"
+
+"@akala/server@^3.0.18":
+  version "3.0.18"
+  resolved "https://registry.yarnpkg.com/@akala/server/-/server-3.0.18.tgz#2a262dab24b4b9b067bbba5dfc0eb29be42e684f"
+  integrity sha512-IrDhlxteIRwr1wcmZQgj679aPZQZ7oc7y9lPsJYNJmxahe5c+pLDxFWmpGlOGyPHiA88iq9gQpoG6KRP7fnebg==
   dependencies:
     "@akala/core" "^2.0.96"
     "@akala/json-rpc-ws" "^7.0.2"
