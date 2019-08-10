@@ -4,8 +4,7 @@ var log = akala.log('akala:module:core:worker');
 
 export interface AssetRegistration
 {
-    register(url: string, path: string): void;
-    getContent(url: string): string;
+    register(url: string, path: string, options?: akala.worker.SendFileOptions): void;
 }
 
 export namespace AssetRegistration
@@ -14,7 +13,7 @@ export namespace AssetRegistration
 }
 
 
-akala.registerFactory(AssetRegistration.name, function ()
+akala.registerFactory<PromiseLike<AssetRegistration>>(AssetRegistration.name, function ()
 {
     return akala.worker.createClient('assets').then(function (client)
     {
@@ -23,11 +22,11 @@ akala.registerFactory(AssetRegistration.name, function ()
         var routerClient = akala.api.jsonrpcws(akala.master.metaRouter).createClient(client, { getContent: akala.worker.handle(router, '') });
 
         return {
-            register: function (url: string, path: string)
+            register: function (url: string, path: string, options: akala.worker.SendFileOptions)
             {
-                router.get(url, akala.worker.expressWrap(function (req, res, next)
+                router.get(url, akala.worker.expressWrap(function (req, res: akala.worker.Callback, next)
                 {
-                    res.sendFile(path, { acceptRanges: false, dotfiles: 'allow', extensions: false }, next);
+                    res.sendFile(path, Object.assign({ acceptRanges: false, dotfiles: 'allow', extensions: false }, options), next);
                 }));
 
                 routerClient.$proxy().register({ path: url, remap: null });

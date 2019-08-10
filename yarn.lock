@@ -53,10 +53,10 @@
     uuid "^3.3.2"
     ws "^6.0.0"
 
-"@akala/server@^3.0.12", "@akala/server@^3.0.15", "@akala/server@^3.0.9":
-  version "3.0.15"
-  resolved "https://registry.yarnpkg.com/@akala/server/-/server-3.0.15.tgz#648fb11061031f5d94626a9672044ce6c0f43d37"
-  integrity sha512-jNzSvG85oIpmCPM8KllhHyU07fcAIG7Q/lt/GrWOneUOwXvPuoWqJpvtCxEgyY7yanLjeITzhd7ww+R2SwxP4w==
+"@akala/server@^3.0.12", "@akala/server@^3.0.17", "@akala/server@^3.0.9":
+  version "3.0.17"
+  resolved "https://registry.yarnpkg.com/@akala/server/-/server-3.0.17.tgz#67eeb2be5937d97a22aa18dc315bb4b87cb55145"
+  integrity sha512-mxWnNGZsE+l6tVnCVmf3BTsEJFrWUV6Fb3YmHan4WFP0J1x8J0yFkorXYaWn5zCPs7uJJ1IX9IJ3iVT8Wqf0UQ==
   dependencies:
     "@akala/core" "^2.0.96"
     "@akala/json-rpc-ws" "^7.0.2"
