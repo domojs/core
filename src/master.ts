@@ -5,8 +5,8 @@ import * as ws from 'ws'
 
 akala.module('@akala-modules/core').init(['$preAuthenticationRouter', '$config.@akala-modules/core'], function (app, config)
 {
-    app.get('/assets', akala.master.serveStatic('modules/core/assets', { fallthrough: true }));
-    app.get('/', akala.master.serveStatic(config && config.root || 'modules/core/views', { fallthrough: true }));
+    app.get('/assets', akala.master.serveStatic('./assets', { fallthrough: true }));
+    app.get('/', akala.master.serveStatic(config && config.root || './views', { fallthrough: true }));
 
     var router = new akala.HttpRouter();
     app.use('/assets', router.router)
@@ -17,9 +17,7 @@ akala.module('@akala-modules/core').init(['$preAuthenticationRouter', '$config.@
         register: function (param, socket)
         {
             if (!assets[param.path])
-            {
                 assets[param.path] = assets[param.path] || [];
-            }
 
             var indexOfSocket = assets[param.path].push(socket)
             if (socket.socket instanceof ws)
@@ -69,7 +67,7 @@ akala.module('@akala-modules/core').init(['$preAuthenticationRouter', '$config.@
 
                         if (r instanceof stream.Readable)
                         {
-                            rw.write('\n');
+                            // rw.write('\n');
                             r.pipe(rw, { end: false });
                             r.on('end', function ()
                             {
