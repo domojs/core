@@ -62,6 +62,15 @@
     uuid "^3.3.2"
     ws "^6.0.0"
 
+"@akala/json-rpc-ws@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@akala/json-rpc-ws/-/json-rpc-ws-8.0.1.tgz#61491e8bafbced427b1945bf980c71c31def7a45"
+  integrity sha512-kHBqJLBVES48/GPV7971xCLoBBLeK7iAKJA1ab2AByDU+OtMsql11p+I4ZGXyj48S8zWVA7FH+UGhaPiIScfBA==
+  dependencies:
+    debug "^4.1.1"
+    uuid "^3.4.0"
+    ws "^7.2.1"
+
 "@akala/server@^3.0.12", "@akala/server@^3.0.19":
   version "3.0.30"
   resolved "https://registry.yarnpkg.com/@akala/server/-/server-3.0.30.tgz#8e211484f47ddc7c0ac2de211ea53bf8041a8667"
@@ -1214,7 +1223,7 @@ utils-merge@1.0.1, utils-merge@1.x.x, utils-merge@^1.0.0:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@^3.3.2, uuid@^3.3.3:
+uuid@^3.3.2, uuid@^3.3.3, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
