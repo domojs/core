@@ -3,11 +3,11 @@
 
 
 "@akala-modules/authentication@^0.1.7":
-  version "0.1.28"
-  resolved "https://registry.yarnpkg.com/@akala-modules/authentication/-/authentication-0.1.28.tgz#ef003dd4ed2f13548e26023bcc17851de05ed8ff"
-  integrity sha512-XFRmccHQLQrqugJ44G6bY5BPc19+ws8GeOsiKmc5Lzjpd2cYJqEY452XU3wG3Y/GXlzX/3tM7Npm7O6AhpCd6A==
+  version "0.1.32"
+  resolved "https://registry.yarnpkg.com/@akala-modules/authentication/-/authentication-0.1.32.tgz#65919b3bcb8679a6afe2a11e5c24c99ccdf428a6"
+  integrity sha512-eeAWt2iE1ZpZtpw7t822fRXi8yyDx366Xd65AVTlPBSa04wW9PCv6UCaUXXpjrmQWW6A9A8o8j4evVaavF1TZw==
   dependencies:
-    "@akala/storage" "^1.1.28"
+    "@akala/storage" "^1.1.32"
     connect-ensure-login "^0.1.1"
     oauth2orize "^1.11.0"
     passport "^0.4.0"
@@ -54,12 +54,12 @@
     utils-merge "^1.0.0"
     ws "^7.2.1"
 
-"@akala/core@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@akala/core/-/core-3.0.1.tgz#170761e0acd511bfa674558a611c2773f01055f5"
-  integrity sha512-L4bcrGBo5wK9GJSB5CqBu1otjuQk5JpUYm0sWgDdLpxFocec7Dd01fhgub1KIc9qZzY7BxGvRDusM4awdvEeQg==
+"@akala/core@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@akala/core/-/core-3.0.5.tgz#ecb2bd6afc5537351392c875be9a4621e3bc559a"
+  integrity sha512-oPphq6V3Qtdb3HVoSO49ekcOPNbwuIweGlB/elBOsxfrDNBTTFY1EexT5h4t25dKx8O5PJQCovUJEd1ryDsy9A==
   dependencies:
-    "@akala/json-rpc-ws" "^9.0.18"
+    "@akala/json-rpc-ws" "^9.0.22"
     browser-process-hrtime "^1.0.0"
     debug "^4.1.1"
     es6-promise "^4.2.8"
@@ -81,10 +81,10 @@
     uuid "^3.3.2"
     ws "^6.0.0"
 
-"@akala/json-rpc-ws@^9.0.18":
-  version "9.0.18"
-  resolved "https://registry.yarnpkg.com/@akala/json-rpc-ws/-/json-rpc-ws-9.0.18.tgz#9768bc2e4d001c028de81d30d98f7a1f53690392"
-  integrity sha512-aPKkAAwQnODr8fQTGWrCY/CV1Y1Zp0pOkwcHTDY1xSdTLrFSgDCTgzxrrZMCqrx9CRG0fYo+mOpm0JHXt9pORg==
+"@akala/json-rpc-ws@^9.0.22":
+  version "9.0.22"
+  resolved "https://registry.yarnpkg.com/@akala/json-rpc-ws/-/json-rpc-ws-9.0.22.tgz#860e7f4a962ce62e25553925ab7582de7a6feb2c"
+  integrity sha512-rZHXaJXAFF30OUEXo0Ke7cyNRhEUfIEHMFDMYU7brzZ+ptvt0KrIz1I0nR2msW+71F2PtvPzkyevsS8bMiyWWg==
   dependencies:
     debug "^4.1.1"
     uuid "^7.0.3"
@@ -110,12 +110,12 @@
     ws "^7.2.1"
     xml2js "^0.4.23"
 
-"@akala/storage@^1.1.28":
-  version "1.1.28"
-  resolved "https://registry.yarnpkg.com/@akala/storage/-/storage-1.1.28.tgz#0eb17dcdc7a2830e26525f08d652937a33a33752"
-  integrity sha512-Dyns8a7hCGl9LOLA29xCiUZDXDFz4Za/jmS6e3PsSho64s1SxGtHDFRJqsE3Hh6j+5bh1yxbZwGKcYNzB6F1cg==
+"@akala/storage@^1.1.32":
+  version "1.1.32"
+  resolved "https://registry.yarnpkg.com/@akala/storage/-/storage-1.1.32.tgz#c1afb343e7faf97ebcfedf1882b1248b1929f12a"
+  integrity sha512-GGx6yMnE2o03eqTJkQ1zCXBvr+Dk3kpcsFz3DPr3v4LLDIvO6+FXKlAwBy8zfpVW+ojOEdwhrdzzFRp9jzTb+Q==
   dependencies:
-    "@akala/core" "^3.0.1"
+    "@akala/core" "^3.0.5"
     reflect-metadata "^0.1.13"
     uuid "^3.4.0"
 
