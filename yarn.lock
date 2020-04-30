@@ -3,11 +3,11 @@
 
 
 "@akala-modules/authentication@^0.1.7":
-  version "0.1.36"
-  resolved "https://registry.yarnpkg.com/@akala-modules/authentication/-/authentication-0.1.36.tgz#2d518712fa5b23a9501eac708e70a843d8b20aff"
-  integrity sha512-+G71o7lxxm0aZfJYwHR3X4orvbPCzKaAqZguvY6ifTCtHUSZAS8bXvsWlGKOZz77rr4QpDUdky1vmVbyZgJLUQ==
+  version "0.1.38"
+  resolved "https://registry.yarnpkg.com/@akala-modules/authentication/-/authentication-0.1.38.tgz#4c5abce6697d1e4db4af3533bd2366d01cb24b8b"
+  integrity sha512-+SdyRyOyaOYilTvGp84XROlUYThF9QE9MU7CBDYx2qDkHEudVYKkHtpizxJ4h8HiHX2JSEEpaprekhsKfo0iPQ==
   dependencies:
-    "@akala/storage" "^1.1.36"
+    "@akala/storage" "^1.1.37"
     connect-ensure-login "^0.1.1"
     oauth2orize "^1.11.0"
     passport "^0.4.0"
@@ -54,10 +54,10 @@
     utils-merge "^1.0.0"
     ws "^7.2.1"
 
-"@akala/core@^3.0.9":
-  version "3.0.9"
-  resolved "https://registry.yarnpkg.com/@akala/core/-/core-3.0.9.tgz#b4f9427f20c38c2ce28a0c62d8bf7614646cf618"
-  integrity sha512-Ws//IKJwgu/bS9XiY5WkX5yN+7T2dIBMCyZ5W6dNjuJoEY6C6cE5xFmz1mMkN7Ibd0iPL4CVdvCDnPRyU52tQA==
+"@akala/core@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@akala/core/-/core-3.1.0.tgz#0bea23fc64861fb776545a668bc7e9a79e307874"
+  integrity sha512-EOzUudSfQr2FUd8c1XX24oLm02ylb8AZOTDWQOdZLetkY9fOBEH7F6rR8p6inYpWpRhUYGpdwozEKHDsgP/KoA==
   dependencies:
     "@akala/json-rpc-ws" "^9.0.26"
     browser-process-hrtime "^1.0.0"
@@ -110,12 +110,12 @@
     ws "^7.2.1"
     xml2js "^0.4.23"
 
-"@akala/storage@^1.1.36":
-  version "1.1.36"
-  resolved "https://registry.yarnpkg.com/@akala/storage/-/storage-1.1.36.tgz#24a6d10a285a284bc16df80ad15d959de93d28c7"
-  integrity sha512-aYHtD324uCnCcP/javxZozTYY3SHfgSBCLt6Dp+/Yh81G4XEU2ag4Evk04whPIafP8J9CIeopkXi1rKHxy0DwQ==
+"@akala/storage@^1.1.37":
+  version "1.1.37"
+  resolved "https://registry.yarnpkg.com/@akala/storage/-/storage-1.1.37.tgz#1fcd8e64b28d9a43fde0260611f9ef124fedcdcf"
+  integrity sha512-viL1NChYtD2AMQBgBULbztFlL/3wN6AVkEkgQpjP/d5yHQIFXdgu417LVd98/HP/DQ24rVWm2wOuA3sDcDI59Q==
   dependencies:
-    "@akala/core" "^3.0.9"
+    "@akala/core" "^3.1.0"
     reflect-metadata "^0.1.13"
     uuid "^7.0.3"
 
