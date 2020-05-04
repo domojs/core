@@ -2,7 +2,7 @@
   "author": "npenin",
   "dependencies": {
     "@akala/client": "^2.1.4",
-    "@akala/json-rpc-ws": "^7.0.2",
+    "@akala/json-rpc-ws": "^9.0.32",
     "@akala/server": "^3.0.19",
     "send": "^0.17.1",
     "uuid": "^3.3.2"
