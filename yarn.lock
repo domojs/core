@@ -18,10 +18,10 @@
     reflect-metadata "^0.1.13"
     uuid "^7.0.3"
 
-"@akala/client@^2.1.4":
-  version "2.1.72"
-  resolved "https://registry.yarnpkg.com/@akala/client/-/client-2.1.72.tgz#702a2e94aec510949f2e0c52cfa0491e8058ef85"
-  integrity sha512-rG5f0OWWb5IQXDkEKVC5LmBnMqkCn8p5o7bYeyH04GpZ2M/SaUnwhaUMyvsIHiFIIobB7ONmRgaeP/YmXUoLwA==
+"@akala/client@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@akala/client/-/client-4.0.2.tgz#ab014f97b56cb605db6d728aabb5421164206856"
+  integrity sha512-DyTszQDEvSsN86lJ6zIEyD0mwXvwfpYs+w3I4iF45ZUNKYo/jawoAIgDuB32f5CaUa4iysrp8QFqGrPFhEFA2A==
   dependencies:
     reflect-metadata "^0.1.13"
   optionalDependencies:
